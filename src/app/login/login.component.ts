@@ -22,6 +22,9 @@ export class LoginComponent implements OnInit {
         console.log(res.message,cred)
         if(res.message==="login successful"){
           alert("login successfull");
+          localStorage.setItem("token",res.token);
+          localStorage.setItem("username",res.username);
+          localStorage.setItem("user-object",JSON.stringify(res.userObj));
           //navigate to user profile
           this.router.navigateByUrl("/userprofile");
         }

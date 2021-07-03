@@ -137,7 +137,7 @@ userApi.post('/login',asyncHandler(async(req,res,next)=>{
             let user_token = await jwt.sign({username:user_found.username},'abcde',{expiresIn:240});
             //sending token to user
             console.log(user_token)
-            res.send({message:"login successful",token:user_token,username:user_credentials.username});
+            res.send({message:"login successful",token:user_token,username:user_credentials.username,userObj:user_found});
         }
         else{
             res.send({message:`invalid password...`});
