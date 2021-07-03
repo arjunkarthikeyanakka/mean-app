@@ -1,0 +1,65 @@
+<p>register works!</p>
+
+<div class="container">
+    <form #ref="ngForm" (ngSubmit)="registerData(ref.value)" class="form-floating" >
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <label for="firstname" class="col-sm-2">First Name</label>
+            <div class="col-sm-4">
+                <input type="text" name="firstname" id="firstname" class="form-control" placeholder="first-name"  ngModel>
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <br>
+        <div class="form-group row">
+            
+            <div class="col-sm-2"></div>
+            <label for="lastname" class="col-sm-2">Last Name</label>
+            <div class="col-sm-4">
+                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="last-name"  ngModel>
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        
+        <br>
+        <div class="form-group row">
+            
+            <div class="col-sm-2"></div>
+            <label for="uname" class="col-sm-2">username</label>
+            <div class="col-sm-4">
+                <input type="text" name="username" id="uname" class="form-control" required ngModel>
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <br>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <label for="emailadd" class="col-sm-2">Email</label>
+            <div class="col-sm-4">
+                <input type="email" name="email" id="emailadd" class="form-control" placeholder="email-address"  ngModel>
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <br>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <label for="passw" class="col-sm-2">Password</label>
+            <div class="col-sm-4">
+                <input type="password" name="password" id="passw" class="form-control" placeholder="password"  ngModel>
+            </div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <br>
+        <div class="form-group row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-4">
+                <button type="submit" class="btn bg-success"> <strong>Register</strong></button>
+            </div>
+        </div>
+    </form>
+</div> 
